@@ -13,9 +13,9 @@ return array;
 destructivelyAddElementToBeginningOfArray(array, "foo");
 
 function addElementToEndOfArray(array, element) {
- return [array,...element];
+ return array.concat([element]);
 }
-addElementToEndOfArray(array,['foo']);
+addElementToEndOfArray(array,'foo');
 
 function destructivelyAddElementToEndOfArray(array, element) {
   array.push(element);
