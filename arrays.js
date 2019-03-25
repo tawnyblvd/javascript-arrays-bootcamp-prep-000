@@ -13,7 +13,7 @@ return array;
 destructivelyAddElementToBeginningOfArray(array, "foo");
 
 function addElementToEndOfArray(array, element) {
-  [array[1],...element];
+  [array,...element];
   return array;
 }
 addElementToEndOfArray(array,['foo']);
